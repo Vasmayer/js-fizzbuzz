@@ -29,14 +29,14 @@ for(let i=1;i<=numberOfCycles;i++)
     {
         console.log(message);
         printTable += `  <tr>
-                            <th scope="row">${message}</th>
+                            <td>${message}</td>
                          </tr>`;
     }
     else
     {
         console.log(i);
         printTable += `  <tr>
-                             <th scope="row">${i}</th>
+                             <td>${i}</td>
                          </tr>`;
     }
 }
