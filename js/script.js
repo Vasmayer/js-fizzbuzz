@@ -11,20 +11,28 @@ Provare a stampare la lista in pagina invece che in console.
 
 */
 
+/* setto il numero di cicli da fare */
 const numberOfCycles = 100;
+/* prendo l'elemento dal DOM */
 const tableBody = document.getElementById("tbody");
+/* inizzializzo la variabile da stampare nell'html */
 let printTable='';
 
+/* ciclo for per 100 volte */
 for(let i=1;i<=numberOfCycles;i++)
 {
     let message = '';
 
+    /* controllo se è divisibile per 3 */
     if(i % 3 === 0)
         message += 'Fizz';
+
     
+        /* controllo se è divisibile per 5  */
     if(i % 5 === 0)
         message += 'Buzz';
 
+    /* se è divisibile per 3 oper 5 allora stampo fizz o buzz altrimenti stampo il numero */
     if(message)
     {
         console.log(message);
@@ -41,4 +49,6 @@ for(let i=1;i<=numberOfCycles;i++)
     }
 }
 
+/* stampo nella tabella il risultato */
 tableBody.innerHTML = printTable;
+console.log(printTable);
