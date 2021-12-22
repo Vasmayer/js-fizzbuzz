@@ -11,7 +11,15 @@ Provare a stampare la lista in pagina invece che in console.
 
 */
 
-for(let i=1;i>=numberOfCycles)
+const numberOfCycles = 100;
+
+for(let i=1;i<=numberOfCycles;i++)
 {
 
+    let message = '';
+    
+    if()
+    {
+
+    }
 }
