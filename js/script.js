@@ -12,20 +12,33 @@ Provare a stampare la lista in pagina invece che in console.
 */
 
 const numberOfCycles = 100;
-const unorderedList = document.getElementById("u-list");
+const tableBody = document.getElementById("tbody");
+let printTable='';
 
 for(let i=1;i<=numberOfCycles;i++)
 {
     let message = '';
 
-    if(i % 3 == 0)
+    if(i % 3 === 0)
         message += 'Fizz';
     
-    if(i % 5 == 0)
+    if(i % 5 === 0)
         message += 'Buzz';
 
     if(message)
+    {
         console.log(message);
+        printTable += `  <tr>
+                            <th scope="row">${message}</th>
+                         </tr>`;
+    }
     else
+    {
         console.log(i);
+        printTable += `  <tr>
+                             <th scope="row">${i}</th>
+                         </tr>`;
+    }
 }
+
+tableBody.innerHTML = printTable;
