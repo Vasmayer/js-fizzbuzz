@@ -12,6 +12,7 @@ Provare a stampare la lista in pagina invece che in console.
 */
 
 const numberOfCycles = 100;
+const unorderedList = document.getElementById("u-list");
 
 for(let i=1;i<=numberOfCycles;i++)
 {
